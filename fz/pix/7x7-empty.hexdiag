@@ -1,0 +1,7 @@
+/DimX 7 def
+/DimY 7 def
+/Scale 1.2 def
+
+FlatTopBoard
+DrawHexBoard
+1 HexBoardBorders

@@ -1,0 +1,30 @@
+/DimX  11 def
+/DimY  11 def
+/Scale 1.2 def
+
+FlatTopBoard
+DrawHexBoard
+1 HexBoardBorders
+
+1 1 1 1 MagicStone
+2 1 1 .9 MagicStone
+3 1 1 .8 MagicStone
+4 1 1 .7  MagicStone
+5 1 1 .6 MagicStone
+6 1 1 .5 MagicStone
+7 1 1 .4 MagicStone
+8 1 1 .3 MagicStone
+9 1 1 .2 MagicStone
+10 1 1 .1 MagicStone
+11 1 0 .05 MagicStone
+1 2 0 1 MagicStone
+2 2 0 .9 MagicStone
+3 2 0 .8 MagicStone
+4 2 0 .7  MagicStone
+5 2 0 .6 MagicStone
+6 2 0 .5 MagicStone
+7 2 0 .4 MagicStone
+8 2 0 .3 MagicStone
+9 2 0 .2 MagicStone
+10 2 0 .1 MagicStone
+11 2 0 .05 MagicStone

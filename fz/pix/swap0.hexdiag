@@ -1,0 +1,8 @@
+/DimX 3 def
+/DimY 3 def
+/Scale 1.2 def
+
+FlatTopBoard
+DrawHexBoard
+1 HexBoardBorders
+1 3 HexBlackPiece

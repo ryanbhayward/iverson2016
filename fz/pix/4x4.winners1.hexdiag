@@ -1,0 +1,19 @@
+/DimX 4 def
+/DimY 4 def
+/Scale 1.2 def
+
+FlatTopBoard
+DrawHexBoard
+1 HexBoardBorders
+1 1 HexBlackMarker
+1 2 HexBlackMarker
+2 1 HexBlackMarker
+2 2 HexBlackMarker
+2 3 HexWhiteMarker
+2 4 HexBlackMarker
+3 1 HexBlackMarker
+3 2 HexWhiteMarker
+3 3 HexBlackMarker
+3 4 HexBlackMarker
+4 3 HexBlackMarker
+4 4 HexBlackMarker

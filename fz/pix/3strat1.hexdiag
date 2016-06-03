@@ -1,0 +1,16 @@
+/DimX 3 def
+/DimY 3 def
+/Scale 1.2 def
+
+FlatTopBoard
+DrawHexBoard
+1 HexBoardBorders
+AltHexBoardCoordinates
+
+1 3 HexWhitePiece
+2 1 HexBlackPiece
+3 1 HexWhitePiece
+2 2 HexWhiteMarker
+3 2 HexWhiteMarker
+3 2 2 3 2 4 HexCurve
+3 2 3 3 2 4 HexCurve

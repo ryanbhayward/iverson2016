@@ -1,0 +1,9 @@
+/DimX 4 def
+/DimY 4 def
+/Scale 1.2 def
+
+FlatTopBoard
+DrawHexBoard
+1 HexBoardBorders
+2 3 HexWhiteMarker
+3 2 HexWhiteMarker
