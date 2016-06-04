@@ -1,0 +1,36 @@
+We are asked for a minimal path from source to destination.
+A simple way to do this is to find a shortest path,
+where each edge (inter-cell connection)
+has the same distance.
+A simple algorithm for unit-distance shortest path is breadth-first search.
+Each node in the algorithm is a cell in the maze.
+Each node has 4 neighbour locations: above, below, left, right
+
+initialize()           # queue will hold cells we have seen but not processed
+                       # parent[] pointers will show way back from dest'n
+                       # seen[]  boolean: have we encountered this cell?
+                       # wall(x): is there a wall at location x?
+Q.add(start)
+seen[start] = true
+parent[start] = start  
+done = (start == dest) # done once we reach the destination
+while (not done) and (not Q.isempty()):
+  x = Q.removefirst()        # remove earliest cell in the queue
+  for each neighbour y of x: # 4 neighbours: above, below, left, right
+    if (not wall(y) and (not done) and (not seen[y]): 
+      Q.add(y)
+      seen[y] = true
+      parent[y] = x
+      done = (y == dest)
+
+we are told that there exists a path, so now to print the path,
+we just follow parent pointers:
+
+x = dest
+while parent[x] <> x:
+  print x   # so on our output grid, change the cell from space to *
+  x = parent[x]
+
+now we just print the grid, and we are done
+  
+
