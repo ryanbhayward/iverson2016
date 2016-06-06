@@ -140,9 +140,6 @@ the specifications. The samples may give hints.
   %non-obvious or ``clever'' parts of your solution.
 \end{enumerate}
 
-
-
-
 %=========================================================================
 
 \newpage
@@ -256,6 +253,7 @@ the first and last character on each row is \verb&|&,  and
 
 $\bullet$
 the bottom row has no spaces.
+\vfill
 
 \noindent
 \begin{minipage}[c]{3cm}
@@ -278,8 +276,7 @@ if it is not on the top row and is \verb&_&. Two vacant cells
 if one is beside the other (up, down, left, or right).
 Neighbouring vacant cells join each other if 
 and only if no wall separates them.
-
-~
+\vfill
 
 \noindent
 (a) \mymarks{1} ~ ~
@@ -305,6 +302,7 @@ for the entrance;
 the last character of the second-last row is a space, for the exit;
 every other character on the rectangular boundary 
 of this grid is \verb&X&.
+\vfill
 
 \noindent
 \begin{minipage}[c]{3cm}
@@ -331,8 +329,7 @@ The \verb&X&-format example above is what we get by converting from the \verb&|&
 Notice that the number of vacant cells can change during this conversion.
 The maze in (b) is what you would get by converting from
 the maze in (a).
-
-~
+\vfill
 
 \noindent
 (b) \mymarks{1} ~ ~
@@ -353,13 +350,14 @@ XXXX
 \end{verbatim}}
 \end{minipage}
 
+\newpage
 (c) \mymarks{4}
 Write a function \texttt{convert(maze)} that takes an array or list of strings representing a valid maze in \verb&|&-format and 
 prints the corresponding maze in \verb&X&-format. 
 For example, \texttt{maze} is from (a) then
 \texttt{convert(maze)} prints the maze from (b).
 
-\vfill
+~
 
 (d) \mymarks{6}
 Now write a function \verb&search(maze)& 
@@ -531,33 +529,6 @@ Justify your answer by giving the winning player's strategy
 (We have included a page with blank $3 \times 3$ hex grids
 on the second last page of this exam. You can use these to help describe the strategy, just make sure that we can follow your reasoning.)
 
-\vfill
-
-\noindent
-\hfill\includegraphics[width=50mm]{fz/pix/3strat.eps}\
-\hfill\includegraphics[width=50mm]{fz/pix/3strat0.eps}\
-\hfill\includegraphics[width=50mm]{fz/pix/3strat1.eps}
-
-\vfill
-
-\noindent{\bf Solution}
-
-(above middle)
-If black's 1st move is not in the set $\{a1,a2,b1\}$ then
-white wins by playing b1, and then on the next move
-one of $\{a1,a2\}$. Similarly, if black's 1st move is not
-in $\{a2,a3,b2\}$ then white wins by playing b2
-and then on the next move one of $\{a2,a3\}$.
-So white wins unless black's 1st move is in {\em both} sets, so a2.
-
-~
-
-(above right)
-Now white wins by playing a3, and then on the next move
-either b2 or (if black is already there) b3, and then 
-on the next move either c2 or c3.
-\vfill~
-
 \newpage
 (b) \mymarks{4}
 For {\bf each} cell on the $4 \times 4$ board below, 
@@ -576,70 +547,6 @@ Illegible entries will be counted incorrect.
 (Some empty $4 \times 4$ grids can be found at the end of this exam. These are for your scratch notes only and will not be looked at when we grade.)
 
 ~
-
-\noindent{\bf Solution}
-
-\begin{center}
-\includegraphics[width=60mm]{fz/pix/4x4.winners.eps}\
-\end{center}
-
-~
-
-White wins by playing b3, as shown (below left).
-By a symmetric strategy (reflect the board through the 
-centermost point) white also wins by playing c2.
-So far we have two winning openings.
-
-~
-
-\includegraphics[width=60mm]{fz/pix/4.1strat2.eps}\
-\includegraphics[width=60mm]{fz/pix/4x4.winners0.eps}
-
-~
-
-\newpage
-If white plays first in any of the unmarked cells
-below left, then black can win. By also considering the 
-symmetric black strategy, we now have 10 losing openings (below right).
-
-~
-
-\includegraphics[width=60mm]{fz/pix/4.1strat.eps}\
-\includegraphics[width=60mm]{fz/pix/4x4.winners1.eps}
-
-~
-
-White can win by playing first at a4.
-If black's reply is not in \{b3,b4,c3,d2,d3\}
-then white wins by next playing c3.
-If black's reply is in one of these 5 cells,
-then white wins by playing c2.
-This is easy to see if black played in \{b3,c3,d3\},
-and not too hard to see if black played in \{b4,d2\}.
-One such line of play is shown below.
-
-By symmetry, White also wins by playing first at d1.
-
-\includegraphics[width=60mm]{fz/pix/4z.eps}
-\includegraphics[width=60mm]{fz/pix/4x4.winners2.eps}
-~
-
-There are only two opening moves left, and they are symmetric.
-If white plays first at c1 (below left), black can win:
-the main variation is shown, this is not a complete proof.
-By symmetry, if white plays first at b4, black wins.
-So we are done.
-
-~
-
-\includegraphics[width=60mm]{fz/pix/4last.eps}\
-\includegraphics[width=60mm]{fz/pix/4x4.winners.eps}
-
-~
-
-PS. Ryan Hayward is writing a book on Hex. If you would like
-to be notified when it is published, send him email:
-\verb+hayward@ualberta.ca+ .
 
 %=========================================================================
 
@@ -664,7 +571,238 @@ to be notified when it is published, send him email:
 \includegraphics[width=40mm]{fz/pix/4x4.eps}~~~~~~\includegraphics[width=40mm]{fz/pix/4x4.eps}~~~~~~\includegraphics[width=40mm]{fz/pix/4x4.eps}\vfill
 \includegraphics[width=40mm]{fz/pix/4x4.eps}~~~~~~\includegraphics[width=40mm]{fz/pix/4x4.eps}~~~~~~\includegraphics[width=40mm]{fz/pix/4x4.eps}
 \end{center}
+\newpage
+\section*{Solutions}
+1(a)
 
+\vfill
+
+1(b)
+
+\vfill
+
+1(c)
+
+\vfill
+
+1(d)
+
+\vfill
+
+1(e)
+
+\vfill
+
+1(f)
+
+\vfill~
+\newpage
+2(a)
+
+\vfill
+
+2(b)
+
+\vfill
+
+2(c)
+
+\vfill
+
+\newpage
+2(d) solution.
+
+You are asked for a minimal path from source to destination.
+One way to find this with a shortest path.
+One algorithm for unit-distance shortest path is breadth-first search.
+Each node in the algorithm is a cell in the maze.
+Each node has 4 neighbour locations: above, below, left, right
+
+\begin{verbatim}
+init()           # queue will hold cells we have seen but not processed
+                 # parent[] pointers will show way back from dest'n
+                 # seen[]  boolean: have we encountered this cell?
+                 # wall(x): is there a wall at location x?
+Q.add(start)
+seen[start] = true
+parent[start] = start  
+done = (start == dest) # done once we reach the destination
+while (not done) and (not Q.isempty()):
+  x = Q.removefirst()        # remove earliest cell in the queue
+  for each neighbour y of x: # 4 neighbours: above, below, left, right
+    if (not wall(y) and (not done) and (not seen[y]): 
+      Q.add(y)
+      seen[y] = true
+      parent[y] = x
+      done = (y == dest)
+\end{verbatim}
+
+You are told that there exists a path.
+It can be printed following parent pointers:
+
+\begin{verbatim}
+x = dest
+while parent[x] <> x:
+  print x   # so on our output grid, change the cell from space to *
+  x = parent[x]
+\end{verbatim}
+
+So now print the grid and you are done.
+
+\newpage
+2(d) another solution. ~
+Traverse the maze via depth-first search,
+which can be implemented recursively. Be careful that the path
+that you find is minimal, i.e.\ has no shortcuts.
+Here is a working python3 solution:
+
+{\footnotesize\begin{verbatim}
+def search(maze):
+    # change the strings to lists of characters
+    # (Python strings are immutable)
+    maze = [list(line) for line in maze]
+
+    # ensures the search won't try to go out of the entrance
+    maze[1][0] = '*'
+
+    def recursive_search(curr_r, curr_c):
+        # if we found the exit, return True
+        if curr_c == len(maze[0])-1:
+            maze[curr_r][curr_c] = '*'
+            return True
+        # if this cell is a wall or we have already visited it
+        if maze[curr_r][curr_c] != ' ':
+            return False
+        # leave a bread crumb, we have visited this space before
+        maze[curr_r][curr_c] = '.'
+        # try searching in each of the four directions from this spot
+        for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            # if we found the exit, mark the path and return True
+            if recursive_search(curr_r + dr, curr_c + dc):
+                maze[curr_r][curr_c] = '*'
+                return True
+        # no exit found
+        return False
+
+    # start the search from the right of the entrance
+    recursive_search(1, 1)
+    # all bread crumbs should be set to ' ' for printing
+    for line in maze:
+        for i in range(len(line)):
+            if line[i] == '.': line[i] = ' '
+    # print it out
+    for line in maze:
+        print(*line, sep = '')
+
+test_maze = [
+    "XXXXXXXXX",
+    "  X     X",
+    "X X XXX X",
+    "X X X X X",
+    "X X X X X",
+    "X     X  ",
+    "XXXXXXXXX"
+]
+
+search(test_maze)
+\end{verbatim}}
+\newpage
+3(a)
+\vfill
+
+3(b)
+\vfill
+
+3(c)
+\vfill~
+
+\newpage
+\noindent
+\includegraphics[width=50mm]{fz/pix/3strat.eps}\
+\includegraphics[width=50mm]{fz/pix/3strat0.eps}\
+\includegraphics[width=50mm]{fz/pix/3strat1.eps}
+
+~
+
+4(a) solution. ~
+(above middle)
+If black's 1st move is not in the set $\{a1,a2,b1\}$ then
+white wins by playing b1, and then on the next move
+one of $\{a1,a2\}$. Similarly, if black's 1st move is not
+in $\{a2,a3,b2\}$ then white wins by playing b2
+and then on the next move one of $\{a2,a3\}$.
+So white wins unless black's 1st move is in {\em both} sets, so a2.
+
+~
+
+(above right)
+Now white wins by playing a3, and then on the next move
+either b2 or (if black is already there) b3, and then 
+on the next move either c2 or c3.
+
+~
+
+4(b)
+\begin{center}
+\includegraphics[width=60mm]{fz/pix/4x4.winners.eps}\
+\end{center}
+
+~
+
+White wins by playing b3, as shown (below left).
+By a symmetric strategy (reflect the board through the 
+centermost point) white also wins by playing c2.
+So far we have two winning openings.
+
+~
+
+\includegraphics[width=60mm]{fz/pix/4.1strat2.eps}\
+\includegraphics[width=60mm]{fz/pix/4x4.winners0.eps}
+
+~
+
+\newpage
+(below left) If white plays first in any of the unmarked cells,
+black can win. Considering also the 
+symmetric black strategy yields 10 losing openings (below right).
+
+~
+
+\includegraphics[width=60mm]{fz/pix/4.1strat.eps}\
+\includegraphics[width=60mm]{fz/pix/4x4.winners1.eps}
+
+~
+
+White can win by playing first at a4.
+If black's reply is not in \{b3,b4,c3,d2,d3\}
+then white wins by next playing c3.
+If black's reply is in one of these 5 cells,
+then white wins by playing c2.
+This is easy to see if black played in \{b3,c3,d3\},
+and not too hard to see if black played in \{b4,d2\}.
+One such line of play is shown below.
+
+By symmetry, White also wins by playing first at d1.
+\vfill
+
+\includegraphics[width=60mm]{fz/pix/4z.eps}
+\includegraphics[width=60mm]{fz/pix/4x4.winners2.eps}
+\vfill
+
+There are only two opening moves left, and they are symmetric.
+If white plays first at c1 (below left), black can win:
+the main variation is shown, this is not a complete proof.
+By symmetry, if white plays first at b4, black wins.
+So we are done.
+\vfill
+
+\includegraphics[width=60mm]{fz/pix/4last.eps}\
+\includegraphics[width=60mm]{fz/pix/4x4.winners.eps}
+\vfill
+
+PS. Ryan Hayward is writing a book on Hex. If you would like
+to be notified when it is published, send him email:
+\verb+hayward@ualberta.ca+ .
 
 %=========================================================================
 \end{document}
