@@ -30,7 +30,7 @@
 {\Large
 \begin{center}
 \textbf{Iverson computing competition} \\
-\textbf{2016 may 31} ~ ~ \textbf{with solutions} \\
+\textbf{2016 may 31} ~ ~ \textbf{solutions appended} \\
 \end{center}
 }
 
@@ -89,7 +89,7 @@ total \rule[-3mm]{0mm}{10mm}	& \verb+- - - -+&40&\\ \hline
 \end{large}
 
 \vfill
-\hfill{\small Exam prepared by Zachary Friggstad and Ryan Hayward}\hfill~
+\hfill{\small Exam by Zachary Friggstad and Ryan Hayward}\hfill~
 %=========================================================================
 \newpage
 \subsubsection*{Exam Format}
@@ -573,29 +573,96 @@ Illegible entries will be counted incorrect.
 \end{center}
 \newpage
 \section*{Solutions}
-1(a)
 
+\begin{minipage}[c]{1cm}
+1(a)  ~
+\end{minipage}
+\begin{minipage}[c]{120mm}
+\includegraphics[width=120mm]{Figures/24-tilings.eps}
+\end{minipage}
 \vfill
 
-1(b)
-
+\noindent 1(b) ~ $f(5) = 8, f(6) = 13$
 \vfill
 
-1(c)
-
+\noindent 1(c) ~ $f(n) = f(n-1) + f(n-2)$
 \vfill
 
-1(d)
-
+\noindent 
+If the first column is covered by a vertical domino,
+then there are $f(n-1)$ ways to tile the remaining $2 \times (n-1)$ grid.
+Otherwise, the first two columns are covered by two horizontal dominoes,
+and the remaining $2 \times (n-2)$ grid can be tiled $f(n-2)$ ways.
 \vfill
 
-1(e)
+\noindent 1(d) ~ Here are two solutions:
 
-\vfill
+\begin{verbatim}
+def tiling_sol1(n):
+   a, b = 1, 1
 
-1(f)
+   # invariant: just before iteration i
+   # we have a = f(i), b = f(i+1)
+   for i in range(n):
+      a, b = b, a+b
 
+   # postcondition: a = f(n), b = f(n+1)
+   return a
+
+def tiling_sol2(n):
+   f = [1, 1]
+   for i in range(2, n+1):
+      f.append(f[i-1] + f[i-2])
+   return f[n]
+\end{verbatim}
+
+\noindent
+Some tried the following approach, but it is very slow. It cannot even compute $f(50)$ in any reasonable time.
+\begin{verbatim}
+def tiling_slow(n):
+   if n <= 1:
+      return 1
+   else:
+      return f(n-1) + f(n-2)
+\end{verbatim}
 \vfill~
+
+\newpage
+\noindent 1(e) ~
+Each domino covers exactly 2 squares so any tiling by dominos can only cover an even number of squares.
+When $n$ is odd, a $3 \times n$ grid contains an odd number of squares. So it cannot be tiled by dominos.
+\vfill
+
+\noindent 1(f) ~ Here are two solutions:
+
+\begin{enumerate}
+\item $g(n) = 3 \cdot g(n-2) + 2 \cdot g(n-4) + 2 \cdot g(n-6) + \ldots + 2 \cdot g(2) + 2 \cdot g(0)$.
+
+  To see this, any tiling either begins with three horizontal dominos which is followed by one of $g(n-2)$ possibilities. Or it begins with a ``wall'' (see Figure 1).
+  There are two such walls of length $k$ for every even $2 \leq k \leq n$, and each possible wall is followed by one of $g(n-k)$ possibilities.
+
+  \begin{figure}[hbp]
+    \begin{center}
+      \includegraphics[width=100mm]{Figures/walls.eps}
+      \end{center}
+    \caption{Left: the two walls of length 8. Right: the two walls of length 2.}
+  \end{figure}
+
+\item $g(2) = 3$ and $g(n) = 4 \cdot g(n-2) - g(n-4)$ for $n \geq 4$.
+
+  To see this, the number of tilings beginning with three horizontal dominos or a length 2 wall is $3 \cdot g(n-2)$. Every other tiling begins with a wall of length
+  at least 4. Such tilings corresponds to tilings of the $3 \times (n-2)$ grid that starts with a wall (see Figure 2). The number of tilings of the $3 \times (n-2)$ grid
+  that begin with a wall is exactly $g(n-2) - g(n-4)$.
+
+    \begin{figure}[hbp]
+    \begin{center}
+      \includegraphics[width=100mm]{Figures/walls2.eps}
+      \end{center}
+    \caption{Swapping the dark grey dominos on the left with the single light grey domino shows how to convert between a length $k$ wall and a length $k-2$ wall.}
+\end{figure}
+\end{enumerate}
+\vfill~
+
 \newpage
 \begin{minipage}[c]{1cm}
 2(a) 
@@ -610,7 +677,7 @@ Illegible entries will be counted incorrect.
 \includegraphics[width=15mm]{maze/b.eps}\
 \end{minipage}
 
-2(c) Here is a solution in python3:
+\noindent 2(c) Here is a solution in python3:
 
 {\small
 \begin{verbatim}
@@ -653,10 +720,9 @@ for line in translate(test_maze):
 \end{verbatim}}
 
 \newpage
-2(d) solution.
+\noindent 2(d) ~
 
-You are asked for a minimal path from source to destination.
-One way to find this with a shortest path.
+One way to find a minimal path is to find a shortest path.
 One algorithm for unit-distance shortest path is breadth-first search.
 Each node in the algorithm is a cell in the maze.
 Each node has 4 neighbour locations: above, below, left, right
@@ -693,7 +759,7 @@ while parent[x] <> x:
 So now print the grid and you are done.
 
 \newpage
-2(d) another solution. ~
+\noindent 2(d) another solution. ~
 Traverse the maze via depth-first search,
 which can be implemented recursively. Be careful that the path
 that you find is minimal, i.e.\ has no shortcuts.
@@ -750,13 +816,84 @@ test_maze = [
 search(test_maze)
 \end{verbatim}}
 \newpage
-3(a)
+\noindent 3(a)
+
+\begin{itemize}
+\item {\bf match}: "()1()0(0)1()"
+\item {\bf match}: "1101()100(0)10(1)01(00)"
+\item {\bf no match}
+\item {\bf match}: "()"
+\item {\bf match}: "()1001(01010100)001(0100010)11(101)101"
+\item {\bf no match}
+\end{itemize}
 \vfill
 
-3(b)
-\vfill
+\noindent 3(b) ~
+You could use a \texttt{split} function that is built in to most programming languages. However, you must take care to remove empty strings from the list of substrings.
 
-3(c)
+\begin{verbatim}
+def extract(blrk):
+    # split into substrings delimited by '*' character
+    # the list comprehension will only use those that are nonempty
+    substrings = blrk.split('*')
+    return [str for str in substrings if str != '']
+\end{verbatim}
+
+Without the split function, you could add the characters of \texttt{blrk} to a buffer, one character at a time. If you encounter the \texttt{*} character then the buffer string
+could be added to the output list (provided the buffer string is not empty).
+\begin{verbatim}
+def extract_v2(blrk):
+    buf = ''
+    substrings = []
+
+    # ensures the last substring of blrk will be processed
+    blrk += '*'
+    
+    for c in blrk:
+        if c == '*':
+            if buf != '':
+                substrings.append(str)
+            str = ''
+        else:
+            buf += c
+
+    return substrings
+\end{verbatim}
+\vfill~
+
+\newpage
+\noindent 3(c) ~
+The idea is to find the earliest occurence of each binary substring of \texttt{blrk} that appeared after the occurence we recorded for the previous binary substring.
+If we do not find all binary substrings this way, there is no match. We also have to make sure the first substring of \texttt{blrk} occurs as a prefix of \texttt{str}
+if \texttt{blrk} does not begin with \texttt{*} (and similarly for the last substring). Care must be taken if \texttt{blrk} contains no \texttt{*}.
+
+\begin{verbatim}
+def match(str, blrk):
+    if '*' not in blrk:
+        return str == blrk
+
+    # here blrk has at least one *
+    substrings = extract(blrk)
+    if substrings == []:
+        return True # anything matches an all-* blork
+
+    # if requires, ensure the start and/or end of str matches the
+    # appropriate substring
+    if blrk[0] != '*' and str[:len(substrings[0])]:
+return False
+
+    for sub in substrings:
+        # find the least index of str where sub appears as a substring
+        loc = str.find(sub)
+        if loc == -1:
+            return False
+        else:
+            # remove all characters of str up to the end of the occurence of sub
+            str = str[loc + len(sub):]
+
+    return True
+
+\end{verbatim}
 \vfill~
 
 \newpage
@@ -764,10 +901,9 @@ search(test_maze)
 \includegraphics[width=50mm]{fz/pix/3strat.eps}\
 \includegraphics[width=50mm]{fz/pix/3strat0.eps}\
 \includegraphics[width=50mm]{fz/pix/3strat1.eps}
+\vfill
 
-~
-
-4(a) solution. ~
+\noindent 4(a) solution. ~
 (above middle)
 If black's 1st move is not in the set $\{a1,a2,b1\}$ then
 white wins by playing b1, and then on the next move
@@ -775,46 +911,40 @@ one of $\{a1,a2\}$. Similarly, if black's 1st move is not
 in $\{a2,a3,b2\}$ then white wins by playing b2
 and then on the next move one of $\{a2,a3\}$.
 So white wins unless black's 1st move is in {\em both} sets, so a2.
-
-~
+\vfill
 
 (above right)
 Now white wins by playing a3, and then on the next move
 either b2 or (if black is already there) b3, and then 
 on the next move either c2 or c3.
+\vfill\vfill
 
-~
-
-4(b)
+\noindent 4(b)
 \begin{center}
 \includegraphics[width=60mm]{fz/pix/4x4.winners.eps}\
 \end{center}
-
-~
+\vfill
 
 White wins by playing b3, as shown (below left).
 By a symmetric strategy (reflect the board through the 
 centermost point) white also wins by playing c2.
 So far we have two winning openings.
-
-~
+\vfill
 
 \includegraphics[width=60mm]{fz/pix/4.1strat2.eps}\
 \includegraphics[width=60mm]{fz/pix/4x4.winners0.eps}
-
-~
+\vfill~
 
 \newpage
+\noindent
 (below left) If white plays first in any of the unmarked cells,
 black can win. Considering also the 
 symmetric black strategy yields 10 losing openings (below right).
-
-~
+\vfill
 
 \includegraphics[width=60mm]{fz/pix/4.1strat.eps}\
 \includegraphics[width=60mm]{fz/pix/4x4.winners1.eps}
-
-~
+\vfill
 
 White can win by playing first at a4.
 If black's reply is not in \{b3,b4,c3,d2,d3\}

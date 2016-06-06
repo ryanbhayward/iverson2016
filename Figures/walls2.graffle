@@ -55,11 +55,38 @@
 			<key>Class</key>
 			<string>LineGraphic</string>
 			<key>ID</key>
-			<integer>119</integer>
+			<integer>138</integer>
 			<key>Points</key>
 			<array>
-				<string>{612, 81}</string>
-				<string>{612, 567}</string>
+				<string>{450, 189}</string>
+				<string>{558, 189}</string>
+			</array>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>HeadArrow</key>
+					<string>FilledArrow</string>
+					<key>Legacy</key>
+					<true/>
+					<key>LineType</key>
+					<integer>1</integer>
+					<key>TailArrow</key>
+					<string>FilledArrow</string>
+					<key>Width</key>
+					<real>2</real>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>LineGraphic</string>
+			<key>ID</key>
+			<integer>133</integer>
+			<key>Points</key>
+			<array>
+				<string>{585, 216}</string>
+				<string>{630, 216}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -71,8 +98,6 @@
 					<true/>
 					<key>LineType</key>
 					<integer>1</integer>
-					<key>Pattern</key>
-					<integer>24</integer>
 					<key>TailArrow</key>
 					<string>0</string>
 					<key>Width</key>
@@ -81,14 +106,125 @@
 			</dict>
 		</dict>
 		<dict>
+			<key>Bounds</key>
+			<string>{{576, 153}, {63, 135}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>132</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>b</key>
+						<string>0.75</string>
+						<key>g</key>
+						<string>0.75</string>
+						<key>r</key>
+						<string>0.75</string>
+					</dict>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.318755</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Fuzziness</key>
+					<real>8.7272834777832031</real>
+					<key>ShadowVector</key>
+					<string>{3, 3}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>CornerRadius</key>
+					<real>15</real>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
 			<key>Class</key>
 			<string>LineGraphic</string>
 			<key>ID</key>
-			<integer>118</integer>
+			<integer>131</integer>
 			<key>Points</key>
 			<array>
-				<string>{715, 522}</string>
-				<string>{715, 567}</string>
+				<string>{801, 216}</string>
+				<string>{846, 216}</string>
+			</array>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>HeadArrow</key>
+					<string>0</string>
+					<key>Legacy</key>
+					<true/>
+					<key>LineType</key>
+					<integer>1</integer>
+					<key>TailArrow</key>
+					<string>0</string>
+					<key>Width</key>
+					<real>2</real>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{792, 153}, {63, 135}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>130</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Style</key>
+			<dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.318755</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Fuzziness</key>
+					<real>8.7272834777832031</real>
+					<key>ShadowVector</key>
+					<string>{3, 3}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>CornerRadius</key>
+					<real>15</real>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>LineGraphic</string>
+			<key>ID</key>
+			<integer>129</integer>
+			<key>Points</key>
+			<array>
+				<string>{787, 90}</string>
+				<string>{787, 135}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -111,11 +247,11 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{684, 477}, {63, 135}}</string>
+			<string>{{756, 45}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>117</integer>
+			<integer>128</integer>
 			<key>Rotation</key>
 			<real>90</real>
 			<key>Shape</key>
@@ -151,263 +287,11 @@
 			<key>Class</key>
 			<string>LineGraphic</string>
 			<key>ID</key>
-			<integer>116</integer>
+			<integer>127</integer>
 			<key>Points</key>
 			<array>
-				<string>{729, 432}</string>
-				<string>{774, 432}</string>
-			</array>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{720, 369}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>115</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>114</integer>
-			<key>Points</key>
-			<array>
-				<string>{657, 432}</string>
-				<string>{702, 432}</string>
-			</array>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{648, 369}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>113</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>112</integer>
-			<key>Points</key>
-			<array>
-				<string>{729, 216}</string>
-				<string>{774, 216}</string>
-			</array>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{720, 153}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>111</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>110</integer>
-			<key>Points</key>
-			<array>
-				<string>{657, 216}</string>
-				<string>{702, 216}</string>
-			</array>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{648, 153}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>109</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>108</integer>
-			<key>Points</key>
-			<array>
-				<string>{715, 90}</string>
-				<string>{715, 135}</string>
+				<string>{643, 90}</string>
+				<string>{643, 135}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -430,11 +314,11 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{684, 45}, {63, 135}}</string>
+			<string>{{612, 45}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>107</integer>
+			<integer>126</integer>
 			<key>Rotation</key>
 			<real>90</real>
 			<key>Shape</key>
@@ -470,11 +354,11 @@
 			<key>Class</key>
 			<string>LineGraphic</string>
 			<key>ID</key>
-			<integer>82</integer>
+			<integer>125</integer>
 			<key>Points</key>
 			<array>
-				<string>{499, 522}</string>
-				<string>{499, 567}</string>
+				<string>{715, 234}</string>
+				<string>{715, 279}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -497,11 +381,11 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{468, 477}, {63, 135}}</string>
+			<string>{{684, 189}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>81</integer>
+			<integer>124</integer>
 			<key>Rotation</key>
 			<real>90</real>
 			<key>Shape</key>
@@ -537,11 +421,11 @@
 			<key>Class</key>
 			<string>LineGraphic</string>
 			<key>ID</key>
-			<integer>80</integer>
+			<integer>123</integer>
 			<key>Points</key>
 			<array>
-				<string>{355, 522}</string>
-				<string>{355, 567}</string>
+				<string>{715, 162}</string>
+				<string>{715, 207}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -564,11 +448,11 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{324, 477}, {63, 135}}</string>
+			<string>{{684, 117}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>79</integer>
+			<integer>122</integer>
 			<key>Rotation</key>
 			<real>90</real>
 			<key>Shape</key>
@@ -604,14 +488,12 @@
 			<key>Class</key>
 			<string>LineGraphic</string>
 			<key>ID</key>
-			<integer>78</integer>
+			<integer>121</integer>
 			<key>Points</key>
 			<array>
-				<string>{211, 522}</string>
-				<string>{211, 567}</string>
+				<string>{9, 216}</string>
+				<string>{54, 216}</string>
 			</array>
-			<key>Rotation</key>
-			<real>90</real>
 			<key>Style</key>
 			<dict>
 				<key>stroke</key>
@@ -631,612 +513,27 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{180, 477}, {63, 135}}</string>
+			<string>{{0, 153}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>77</integer>
-			<key>Rotation</key>
-			<real>90</real>
+			<integer>120</integer>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
 			<dict>
-				<key>shadow</key>
+				<key>fill</key>
 				<dict>
 					<key>Color</key>
 					<dict>
-						<key>a</key>
-						<string>0.318755</string>
 						<key>b</key>
-						<string>0</string>
+						<string>0.5</string>
 						<key>g</key>
-						<string>0</string>
+						<string>0.5</string>
 						<key>r</key>
-						<string>0</string>
+						<string>0.5</string>
 					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
 				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>76</integer>
-			<key>Points</key>
-			<array>
-				<string>{67, 522}</string>
-				<string>{67, 567}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{36, 477}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>75</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>74</integer>
-			<key>Points</key>
-			<array>
-				<string>{513, 432}</string>
-				<string>{558, 432}</string>
-			</array>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{504, 369}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>73</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>72</integer>
-			<key>Points</key>
-			<array>
-				<string>{427, 450}</string>
-				<string>{427, 495}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{396, 405}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>71</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>70</integer>
-			<key>Points</key>
-			<array>
-				<string>{427, 378}</string>
-				<string>{427, 423}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{396, 333}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>69</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>68</integer>
-			<key>Points</key>
-			<array>
-				<string>{283, 450}</string>
-				<string>{283, 495}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{252, 405}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>67</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>66</integer>
-			<key>Points</key>
-			<array>
-				<string>{283, 378}</string>
-				<string>{283, 423}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{252, 333}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>65</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>64</integer>
-			<key>Points</key>
-			<array>
-				<string>{139, 450}</string>
-				<string>{139, 495}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{108, 405}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>63</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>62</integer>
-			<key>Points</key>
-			<array>
-				<string>{139, 378}</string>
-				<string>{139, 423}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{108, 333}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>61</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>60</integer>
-			<key>Points</key>
-			<array>
-				<string>{9, 432}</string>
-				<string>{54, 432}</string>
-			</array>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{0, 369}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>59</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
 				<key>shadow</key>
 				<dict>
 					<key>Color</key>
@@ -1269,8 +566,8 @@
 			<integer>58</integer>
 			<key>Points</key>
 			<array>
-				<string>{513, 216}</string>
-				<string>{558, 216}</string>
+				<string>{369, 216}</string>
+				<string>{414, 216}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1291,7 +588,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{504, 153}, {63, 135}}</string>
+			<string>{{360, 153}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1332,8 +629,8 @@
 			<integer>56</integer>
 			<key>Points</key>
 			<array>
-				<string>{499, 90}</string>
-				<string>{499, 135}</string>
+				<string>{355, 90}</string>
+				<string>{355, 135}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -1356,7 +653,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{468, 45}, {63, 135}}</string>
+			<string>{{324, 45}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1399,8 +696,8 @@
 			<integer>54</integer>
 			<key>Points</key>
 			<array>
-				<string>{355, 90}</string>
-				<string>{355, 135}</string>
+				<string>{211, 90}</string>
+				<string>{211, 135}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -1423,7 +720,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{324, 45}, {63, 135}}</string>
+			<string>{{180, 45}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1466,8 +763,8 @@
 			<integer>52</integer>
 			<key>Points</key>
 			<array>
-				<string>{427, 234}</string>
-				<string>{427, 279}</string>
+				<string>{283, 234}</string>
+				<string>{283, 279}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -1490,7 +787,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{396, 189}, {63, 135}}</string>
+			<string>{{252, 189}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1533,8 +830,8 @@
 			<integer>50</integer>
 			<key>Points</key>
 			<array>
-				<string>{427, 162}</string>
-				<string>{427, 207}</string>
+				<string>{283, 162}</string>
+				<string>{283, 207}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -1557,7 +854,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{396, 117}, {63, 135}}</string>
+			<string>{{252, 117}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1600,8 +897,8 @@
 			<integer>48</integer>
 			<key>Points</key>
 			<array>
-				<string>{283, 234}</string>
-				<string>{283, 279}</string>
+				<string>{139, 234}</string>
+				<string>{139, 279}</string>
 			</array>
 			<key>Rotation</key>
 			<real>90</real>
@@ -1624,7 +921,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{252, 189}, {63, 135}}</string>
+			<string>{{108, 189}, {63, 135}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1635,6 +932,18 @@
 			<string>Rectangle</string>
 			<key>Style</key>
 			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>b</key>
+						<string>0.5</string>
+						<key>g</key>
+						<string>0.5</string>
+						<key>r</key>
+						<string>0.5</string>
+					</dict>
+				</dict>
 				<key>shadow</key>
 				<dict>
 					<key>Color</key>
@@ -1667,140 +976,6 @@
 			<integer>46</integer>
 			<key>Points</key>
 			<array>
-				<string>{283, 162}</string>
-				<string>{283, 207}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{252, 117}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>45</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>42</integer>
-			<key>Points</key>
-			<array>
-				<string>{139, 234}</string>
-				<string>{139, 279}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{108, 189}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>41</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>40</integer>
-			<key>Points</key>
-			<array>
 				<string>{139, 162}</string>
 				<string>{139, 207}</string>
 			</array>
@@ -1829,13 +1004,25 @@
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>39</integer>
+			<integer>45</integer>
 			<key>Rotation</key>
 			<real>90</real>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
 			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>b</key>
+						<string>0.5</string>
+						<key>g</key>
+						<string>0.5</string>
+						<key>r</key>
+						<string>0.5</string>
+					</dict>
+				</dict>
 				<key>shadow</key>
 				<dict>
 					<key>Color</key>
@@ -1868,73 +1055,6 @@
 			<integer>38</integer>
 			<key>Points</key>
 			<array>
-				<string>{211, 90}</string>
-				<string>{211, 135}</string>
-			</array>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{180, 45}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>37</integer>
-			<key>Rotation</key>
-			<real>90</real>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.318755</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>27</integer>
-			<key>Points</key>
-			<array>
 				<string>{67, 90}</string>
 				<string>{67, 135}</string>
 			</array>
@@ -1963,76 +1083,25 @@
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>31</integer>
+			<integer>37</integer>
 			<key>Rotation</key>
 			<real>90</real>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
 			<dict>
-				<key>shadow</key>
+				<key>fill</key>
 				<dict>
 					<key>Color</key>
 					<dict>
-						<key>a</key>
-						<string>0.318755</string>
 						<key>b</key>
-						<string>0</string>
+						<string>0.5</string>
 						<key>g</key>
-						<string>0</string>
+						<string>0.5</string>
 						<key>r</key>
-						<string>0</string>
+						<string>0.5</string>
 					</dict>
-					<key>Fuzziness</key>
-					<real>8.7272834777832031</real>
-					<key>ShadowVector</key>
-					<string>{3, 3}</string>
 				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>CornerRadius</key>
-					<real>15</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>LineGraphic</string>
-			<key>ID</key>
-			<integer>4</integer>
-			<key>Points</key>
-			<array>
-				<string>{9, 216}</string>
-				<string>{54, 216}</string>
-			</array>
-			<key>Style</key>
-			<dict>
-				<key>stroke</key>
-				<dict>
-					<key>HeadArrow</key>
-					<string>0</string>
-					<key>Legacy</key>
-					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
-					<key>TailArrow</key>
-					<string>0</string>
-					<key>Width</key>
-					<real>2</real>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{0, 153}, {63, 135}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>3</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
 				<key>shadow</key>
 				<dict>
 					<key>Color</key>
@@ -2111,7 +1180,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2016-06-06 15:30:34 +0000</string>
+	<string>2016-06-06 20:43:20 +0000</string>
 	<key>Modifier</key>
 	<string>Zac Friggstad</string>
 	<key>NotesVisible</key>
@@ -2192,7 +1261,7 @@
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{104, 4}, {1067, 873}}</string>
+		<string>{{144, 4}, {1067, 873}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -2206,7 +1275,7 @@
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {932, 731}}</string>
+		<string>{{95, 0}, {932, 731}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
